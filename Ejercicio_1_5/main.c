@@ -1,0 +1,18 @@
+#include "funciones.h"
+
+int main()
+{
+    int vec[TAM] = {2,9,2,1,4,6,2,5,3,9};
+
+    printf("\n\nPrograma dedicado a eliminar la primera aparicion de un elemento, en un vector.");
+    printf("\n\nEste va a ser el vector con dados para hacer la eliminacion : \n\n Datos :\t");
+
+    for (int i = 0 ; i < TAM ; i++)
+        printf("%d  ", *(vec+i));
+
+    Eliminar_todos(vec);
+
+    printf("\n\n");
+    system("pause");
+    return 0;
+}
